@@ -71,19 +71,13 @@
         }
 
         .avatar {
-            width: 88px;
-            height: 88px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            background: var(--surface);
             border: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            font-weight: 500;
-            color: var(--text-muted);
             margin: 0 auto 1.75rem;
-            letter-spacing: 0.02em;
+            object-fit: cover;
+            display: block;
         }
 
         h1 {
@@ -168,12 +162,16 @@
             .link {
                 justify-content: center;
             }
+            .avatar {
+                width: 100px;
+                height: 100px;
+            }
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <div class="avatar">PH</div>
+        <img src="profil.jpg" alt="Philipp Hock" class="avatar">
         
         <h1>Philipp Hock</h1>
         <p class="subtitle">M.Sc. Industrial Engineering and Management</p>
